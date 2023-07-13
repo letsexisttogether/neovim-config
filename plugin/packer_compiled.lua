@@ -114,10 +114,20 @@ _G.packer_plugins = {
     path = "C:\\Users\\bleck\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\monokai-pro.nvim",
     url = "https://gitlab.com/__tpb/monokai-pro.nvim"
   },
+  ["neovim-cmake"] = {
+    loaded = true,
+    path = "C:\\Users\\bleck\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\neovim-cmake",
+    url = "https://github.com/Shatur/neovim-cmake"
+  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "C:\\Users\\bleck\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
+  },
+  ["nvim-dap"] = {
+    loaded = true,
+    path = "C:\\Users\\bleck\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-dap",
+    url = "https://github.com/mfussenegger/nvim-dap"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
