@@ -1,5 +1,5 @@
 -- Load th  colorscheme
-require('plugins/themes/onedark_pro')
+require('plugins/themes/monokai_pro')
 -- Load the statusline style
 require('plugins/themes/lualine')
 -- Load the transperent

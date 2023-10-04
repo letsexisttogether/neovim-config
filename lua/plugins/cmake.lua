@@ -1,4 +1,5 @@
 local Path = require('plenary.path')
+
 require('cmake').setup({
   cmake_executable = 'cmake', -- CMake executable to run.
   save_before_build = true, -- Save all buffers before building.
@@ -17,9 +18,8 @@ require('cmake').setup({
   },
   copy_compile_commands = true, -- Copy compile_commands.json to current working directory.
   dap_configurations = { -- Table of different DAP configurations.
-    lldb_vscode = { type = 'lldb', request = 'launch' },
-    cppdbg_vscode = { type = 'cppdbg', request = 'launch' },
+    codelldb = { type = 'codelldb', request = 'launch' }
   },
-  dap_configuration = 'lldb_vscode', -- DAP configuration to use if the projects `parameters_file` does not specify one.
+  dap_configuration = 'codelldb',
   dap_open_command = function(...) require('dap').repl.open(...) end, -- Command to run after starting DAP session. You can set it to `false` if you don't want to open anything or `require('dapui').open` if you are using https://github.com/rcarriga/nvim-dap-ui
 })

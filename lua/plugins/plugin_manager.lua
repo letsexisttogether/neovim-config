@@ -20,11 +20,11 @@ return require('packer').startup(function(use)
     -- Monokai (theme)
     use { 'https://gitlab.com/__tpb/monokai-pro.nvim', as = 'monokai-pro.nvim' }
 
-    -- Tokeo nigth (theme)
+    -- Tokyo nigth (theme)
     use { 'folke/tokyonight.nvim' }
 
     -- One dark pro (theme)
-    use { 'joshdick/onedark.vim' } 
+    use { 'joshdick/onedark.vim' }
 
     -- Statusline style
     use { 'feline-nvim/feline.nvim', branch = '0.5-compat' }
@@ -59,6 +59,10 @@ return require('packer').startup(function(use)
     use { 'Shatur/neovim-cmake' }
     use { 'nvim-lua/plenary.nvim' }
 
-    -- Debuger
-    use {'mfussenegger/nvim-dap'}
+    -- Debugger
+    use { 'mfussenegger/nvim-dap' }
+    use { 'jay-babu/mason-nvim-dap.nvim' }
+
+    -- More convenient debugger
+    use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
 end)
