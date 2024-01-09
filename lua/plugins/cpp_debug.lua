@@ -5,11 +5,11 @@ dap.adapters.codelldb = {
   port = "${port}",
   executable = {
     -- CHANGE THIS to your path!
-    command = 'C:\\Users\\bleck\\.vscode\\extensions\\vadimcn.vscode-lldb-1.9.2\\adapter\\codelldb',
+    command = 'codelldb',
     args = {"--port", "${port}"},
 
     -- On windows you may have to uncomment this:
-    -- detached = false,
+    detached = false,
   }
 }
 
