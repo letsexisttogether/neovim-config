@@ -26,6 +26,9 @@ return require('packer').startup(function(use)
     -- One dark pro (theme)
     use { 'joshdick/onedark.vim' }
 
+    -- GruvBox (theme)
+    use { "ellisonleao/gruvbox.nvim" }
+
     -- Statusline style
     use { 'feline-nvim/feline.nvim', branch = '0.5-compat' }
 

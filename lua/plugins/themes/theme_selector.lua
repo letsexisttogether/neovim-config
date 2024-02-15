@@ -1,5 +1,5 @@
 -- Load th  colorscheme
-require('plugins/themes/monokai_pro')
+require('plugins/themes/gruvbox')
 -- Load the statusline style
 require('plugins/themes/lualine')
 -- Load the transperent

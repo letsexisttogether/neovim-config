@@ -89,6 +89,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\bleck\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\feline.nvim",
     url = "https://github.com/feline-nvim/feline.nvim"
   },
+  ["gruvbox.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\bleck\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\gruvbox.nvim",
+    url = "https://github.com/ellisonleao/gruvbox.nvim"
+  },
   ["lsp-zero.nvim"] = {
     loaded = true,
     path = "C:\\Users\\bleck\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lsp-zero.nvim",
