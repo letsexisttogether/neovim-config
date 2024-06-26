@@ -46,3 +46,4 @@ keymap.set('n', debugKey .. 'f', function()
   local widgets = require('dap.ui.widgets')
   require('dap.ui.widgets').centered_float(widgets.frames)
 end)
+
