@@ -1,6 +1,5 @@
 local keymap = vim.keymap
 local cmd = vim.cmd
-local keymap = vim.keymap
 
 keymap.set("n", "<leader>er", cmd.Ex)
 
@@ -23,12 +22,20 @@ keymap.set("n", "<leader>vrn", function() vim.lsp.buf.rename() end, opts)
 keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
 
 -- Default vim remap
-keymap.set("v", "K", ":m '<-2<CR>gv=gv")
-keymap.set("v", "J", ":m '>+1<CR>gv=gv")
+keymap.set("v", "K", ":m '<-3<CR>gv=gv")
+keymap.set("v", "J", ":m '>+0<CR>gv=gv")
 
 keymap.set("n", "<leader>r", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 
--- Debuger (dap) remap
+local cmp = require('cmp')
+
+-- Remap completion confirm to Ctrl+Enter
+cmp.setup({
+  mapping = {
+    ['<CR>'] = cmp.mapping.confirm({ select = true }),  -- Map Ctrl + Enter to confirm completion
+  },
+})
+
 local debugKey = '<leader>d'
 keymap.set('n', debugKey .. 'c', function() require('dap').continue() end)
 keymap.set('n', debugKey .. 'or', function() require('dap').step_over() end)
@@ -46,5 +53,3 @@ keymap.set('n', debugKey .. 'f', function()
   local widgets = require('dap.ui.widgets')
   require('dap.ui.widgets').centered_float(widgets.frames)
 end)
-
-
